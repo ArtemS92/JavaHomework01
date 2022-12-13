@@ -6,14 +6,11 @@ class Palindrome {
         while (left < right) {
             if (!Character.isLetterOrDigit(s.charAt(left))) {
                 left++;
-            }
-            else if (!Character.isLetterOrDigit(s.charAt(right))){
+            } else if (!Character.isLetterOrDigit(s.charAt(right))) {
                 right--;
-            }
-            else if (s.charAt(left) != s.charAt(right)) {
+            } else if (s.charAt(left) != s.charAt(right)) {
                 return false;
-            }
-            else {
+            } else {
                 left++;
                 right--;
             }
